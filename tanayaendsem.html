@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inline Custom CSS -->
+    <style>
+        /* Font import */
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
+
+        body {
+            font-family: 'jaro', sans-serif;
+        }
+
+        
+    /* Home Section - Full Screen Height */
+    #home {
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: radial-gradient(circle, #fff0f6, #f8d0e2, #f5a1b3, #e23a6f, #9b357b, #681f41);
+        color: #2b2b2b; /* Darker text color */
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Optional shadow for readability */
+    }
+
+    /* Increase the font size for Home Section */
+    #home h1 {
+        font-size: 15rem; /* Increase font size to make it larger */
+        font-weight: bold;
+        color: #b93d75; /* Soft, warm red color for the name */
+    }
+
+    #home p {
+        font-size: 3.5rem; /* Increase font size for the portfolio text */
+        font-style: italic;
+        color: #ad5781; /* White color for contrast */
+    }
+
+        h1, h2 {
+            font-weight: bold;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            font-family: 'jaro', sans-serif;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link {
+            font-weight: normal;
+        }
+
+        /* Home Section (Gradient Background) */
+        body {
+            background: radial-gradient(circle, #fff0f6, #f8d0e2, #f5a1b3, #e23a6f, #9b357b, #681f41); 
+            min-height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        /* Section Padding */
+        section {
+            padding: 60px 0;
+        }
+
+        /* Card Image Styles */
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+        }
+
+        /* About Section Styles */
+        #about img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        </style>
+
+        <style>
+    /* Home Section - Full Screen Height */
+    #home {
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: radial-gradient(circle, #fff0f6, #f8d0e2, #f5a1b3, #e23a6f, #9b357b, #681f41);
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #about {
+        background-color: #f8f9fa; /* Light background color, same as portfolio section */
+        padding: 60px 0;}
+</style>
+<style>
+        /* Skills Section */
+        #skills {
+            padding: 50px 0;
+        }
+
+        /* Portfolio Section */
+        #portfolio {
+            padding: 50px 0;
+            background-color: #f9f9f9; /* Light background for portfolio */
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 0;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .btn-primary {
+            background-color: #681f41;
+            border-color: #681f41;
+        }
+
+        .btn-primary:hover {
+            background-color: #9b357b;
+            border-color: #9b357b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5">
+        <div class="container">
+            <h1>Tanaya Sule</h1>
+            <p>Portfolio 2024</p>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+<section id="about" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <div class="about-img-container">
+                    <img src="assets/img/img for webpage.jpeg" class="img-fluid rounded-3" alt="Your Photo">
+                </div>
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-6 d-flex flex-column justify-content-between">
+                <h2>About Me</h2>
+                <p class="text-justify">
+                    I am a second-year Communication Design student with a passion for crafting visual experiences that resonate. 
+                    My work spans book design, social media graphics, brochures, branding, and packaging, where I strive to blend 
+                    creativity and strategy to tell compelling stories. As a budding designer, I’m constantly exploring new techniques 
+                    and ideas to create designs that are not only visually striking but also meaningful. Whether it’s a book cover that captivates, 
+                    social media visuals that engage, or packaging that stands out, I’m eager to bring concepts to life with fresh, innovative thinking.
+                </p>
+                <p class="text-justify">
+                    In addition to honing my design skills, I have developed a keen interest in user experience (UX) design, understanding how form and 
+                    function can work together to create intuitive and impactful products. I am particularly drawn to the challenge of simplifying complex 
+                    ideas into clear, visually appealing designs that can communicate messages effectively to a wide range of audiences. 
+                    Whether it's through digital platforms or print media, I believe design is a powerful tool for shaping perceptions and evoking emotions.
+                </p>
+                <p class="text-justify">
+                    I am committed to constantly learning and evolving as a designer, staying updated with the latest design trends, tools, and technologies. 
+                    My goal is not only to produce designs that are aesthetically pleasing but also to ensure they serve a purpose—whether it’s driving a brand’s identity, 
+                    enhancing user experiences, or telling a story that connects with the audience on a deeper level. 
+                    I look forward to expanding my portfolio with exciting new projects that challenge me creatively and help me grow professionally.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS for Adjustments -->
+<style>
+    #about {
+        background-color: #f8f9fa; /* Light background */
+        padding: 60px 0; /* Section padding */
+    }
+
+    .about-img-container img {
+        width: 100%; 
+        height: auto;
+        border-radius: 15px; /* Rounded rectangle effect */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Optional shadow for image */
+    }
+
+    #about .col-md-6 {
+        display: flex;
+        align-items: center; /* Vertically align image and text */
+    }
+
+    /* Ensure that the text and image are of equal height */
+    .d-flex {
+        height: 100%;
+    }
+
+    .d-flex p {
+        flex-grow: 1;
+    }
+
+    /* Justify the text */
+    .text-justify {
+        text-align: justify;
+    }
+
+    /* Additional spacing for the header */
+    #about h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+</style>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center">My Skills</h2>
+            <p class="text-center">Here are some of the skills I have developed:</p>
+            <div class="row text-center">
+                <div class="col-md-3"><p>Adobe Photoshop</p></div>
+                <div class="col-md-3"><p>Adobe Illustrator</p></div>
+                <div class="col-md-3"><p>Adobe Indesign</p></div>
+                <div class="col-md-3"><p>Adobe Premiere Pro</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">My Work</h2>
+            <p class="text-center">Check out some of my projects below:</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="assets/img/book des webp.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <a href="https://www.behance.net/nilendrasule" target="_blank" class="btn btn-primary w-100">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="assets/img/pizza box for webp.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <a href="https://www.behance.net/gallery/212124787/Vinnies-Pizza-Pizza-Box-Design" target="_blank" class="btn btn-primary w-100">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="assets/img/brochure for webp.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <a href="https://www.behance.net/nilendrasule" target="_blank" class="btn btn-primary w-100">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="assets/img/pc for web.jpeg" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <a href="https://www.behance.net/nilendrasule" target="_blank" class="btn btn-primary w-100">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center">Feel free to reach out!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
